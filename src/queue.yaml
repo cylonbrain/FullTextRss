@@ -1,0 +1,12 @@
+queue:
+- name: mitbbs-queue
+  rate: 10/m
+  bucket_size: 10
+
+- name: cnbeta-queue
+  rate: 10/m
+  bucket_size: 10
+  
+- name: powerapple-queue
+  rate: 10/m
+  bucket_size: 10

@@ -1,0 +1,20 @@
+application: stevenfeedreader
+version: 1-5
+runtime: python
+api_version: 1
+
+handlers:
+- url: /ping
+  script: ping.py
+- url: /queue
+  script: rss_item_queue.py
+- url: /rss
+  script: rss.py
+- url: /favicon\.ico
+  static_files: favicon.gif
+  upload: favicon\.gif
+- url: /dbstat
+  script: dbstat.py
+  
+builtins:
+- datastore_admin: on

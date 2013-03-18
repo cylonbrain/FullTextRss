@@ -1,0 +1,16 @@
+cron:
+- description: daily mitbbs job
+  url: /ping?site=mitbbs
+  schedule: every 10 minutes
+
+- description: daily cnbeta job
+  url: /ping?site=cnbeta
+  schedule: every 10 minutes
+
+- description: daily powerapple job
+  url: /ping?site=powerapple
+  schedule: every 10 minutes
+  
+- description: daily database statistic job
+  url: /dbstat
+  schedule: every 5 hours
