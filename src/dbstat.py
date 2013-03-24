@@ -1,4 +1,7 @@
-
+'''
+Using google fusion to statistics the count of entries. 
+Pretty rubbish approach after reviewed by myself. Will be better if can store into datebase directly.
+'''
 import urllib2
 import logging
 

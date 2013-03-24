@@ -1,6 +1,8 @@
 '''
 Created on 3 Oct 2011
 
+There is scheduled task regular hit this ping page, and this will kick off the fetch site rss task
+
 @author: Steven
 '''
 from rssreader import RssReader
@@ -13,8 +15,8 @@ class WebFetchTask(webapp.RequestHandler):
         if site is None or site=='':
             print "Need parameter"
             return
-        mitbbs = RssReader(site)
-        mitbbs.update_cache()
+        rss = RssReader(site)
+        rss.update_cache()
 
 def main():
     run_wsgi_app(webapp.WSGIApplication([
